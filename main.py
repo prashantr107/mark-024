@@ -16,6 +16,22 @@ products = [
 def get_products():
     return {"products": products}
 
+
+@app.post("/products")
+def create_product():
+    return {"message": "Product added successfully"}
+
+
+@app.put("/products/1")
+def update_product():
+    return {"message": "Product updated successfully"}
+
+
+@app.delete("/products/1")
+def delete_product():
+    return {"message": "Product deleted successfully"}
+
+
 category=["electronics","fashion","home appliances"]
    
 
