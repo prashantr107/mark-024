@@ -32,6 +32,28 @@ def delete_product():
     return {"message": "Product deleted successfully"}
 
 
+#1 dictionary
+#2 list of string
+#3 list of dictionary
+#4 nested data
+
+@app.get("/products/1")
+def get_product_details():
+    return {
+        "id": 1,
+        "name": "laptop",
+        "price": 50000
+    }
+
+@app.get("/users/1")
+def get_user_details():
+    return {
+        "id": 1,
+        "name": "John Doe",
+        "email": "john.doe@example.com"
+    }
+
+
 category=["electronics","fashion","home appliances"]
    
 
