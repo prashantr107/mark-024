@@ -49,8 +49,8 @@ def get_product_details():
 def get_user_details():
     return {
         "id": 1,
-        "name": "John Doe",
-        "email": "john.doe@example.com"
+        "name": "james",
+        "email": "james@gmail.com"
     }
 
 
