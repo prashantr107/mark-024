@@ -1,7 +1,8 @@
+
 FastAPI E-Commerce Backend
 This project is a high-performance e-commerce backend API built with FastAPI. It covers the entire development lifecycle, from project architecture and database design to authentication and deployment.
 
-🚀 Project Overview
+##🚀 Project Overview
 This API provides a robust foundation for an online store, featuring:
 
 User Authentication: Registration, login, and JWT-based security.
@@ -9,7 +10,8 @@ Product Management: Full CRUD operations for products and categories.
 Order System: Support for shopping carts, order placement, and management.
 Data Validation: Built-in validation using Pydantic schemas.
 Database Integration: Scalable architecture using PostgreSQL and SQLAlchemy ORM.
-🛠️ Tech Stack
+
+##🛠️ Tech Stack
 Framework: FastAPI
 Language: Python
 Database: PostgreSQL
@@ -17,7 +19,8 @@ ORM: SQLAlchemy
 Validation: Pydantic
 Migrations: Alembic
 Documentation: Swagger UI & ReDoc
-📂 Project Structure
+
+##📂 Project Structure
 Following best practices, the application is organized by feature:
 
 app/: Main source code directory
