@@ -22,8 +22,19 @@ def create_product(product: Product):
     }
 
 
+class OrderItem(BaseModel):
+    product_id: int
+    quantity: int
+class Order(BaseModel):
+    customer_name: str
+    items: list[OrderItem]
 
-
+@app.post("/orders")
+def create_order(order: Order):
+    return {
+        "message": "Order created successfully",
+        "order": order
+    }
 
 
 @app.put("/products/{product_id}")
