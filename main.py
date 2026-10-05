@@ -3,19 +3,27 @@ from pydantic import BaseModel
 
 app = FastAPI()
 
+class Category(BaseModel):
+    id: int
+    name: str
 
 class Product(BaseModel):
     name: str   
     price: float
-    in_stock:bool = True
-    description: str | None = None
+    category: Category
+ 
+
 
 @app.post("/products")
 def create_product(product: Product):
     return {
         "message": "Product received",
-        "product": product.description
+        "product": product
     }
+
+
+
+
 
 
 @app.put("/products/{product_id}")
