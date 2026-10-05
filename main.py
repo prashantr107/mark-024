@@ -50,7 +50,15 @@ def get_user_details():
     return {
         "id": 1,
         "name": "John Doe",
-        "email": "john.doe@example.com"
+        "age": 25,
+        "address": {
+            "city": "New York",
+            "zip": "10001"
+        },
+        "orders":[
+            {"id":"order id 1",
+                "product":"mobile"}
+              ]
     }
 
 
