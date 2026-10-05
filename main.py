@@ -7,13 +7,14 @@ app = FastAPI()
 class Product(BaseModel):
     name: str   
     price: float
-    in_stock:bool 
+    in_stock:bool = True
+    description: str | None = None
 
 @app.post("/products")
 def create_product(product: Product):
     return {
         "message": "Product received",
-        "product_name": product.name
+        "product": product.description
     }
 
 
