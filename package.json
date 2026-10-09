@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/prashantr107/mark-024_Bank_Transaction_System_Backend#readme",
   "dependencies": {
+    "bcryptjs": "^3.0.3",
     "dotenv": "^18.0.6",
     "express": "^5.2.1",
     "mongoose": "^9.11.1"
